@@ -6,7 +6,8 @@ setlocal
 
 :: Define the URL and the destination file and the destination folder
 set "url=https://nodejs.org/dist/v20.14.0/node-v20.14.0-win-x64.zip"
-set "zipfile=.\eLU-Core\downloads\nodejs.zip"
+set "zipDir=.\eLU-Core\downloads"
+set "zipfile=%zipDir%\nodejs.zip"
 set "destination=.\eLU-Core\runtime\nodejs"
 
 :: Check if the destination folder exists
@@ -16,7 +17,9 @@ if exist "%destination%" (
         echo The destination folder is not empty.
         exit /b 0
     )
-) 
+)
+
+if not exist "%zipDir%" mkdir "%zipDir%"
 
 :: Use PowerShell to download the file
 PowerShell -Command "Invoke-WebRequest -Uri '%url%' -OutFile '%zipfile%'"
