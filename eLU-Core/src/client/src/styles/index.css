@@ -24,7 +24,7 @@
 
    --background: #000000;
    --background-alt: var(--global-dark);
-   --text-color: var(--secondary-color);
+   --text-color: var(--success-color);
    --text-color-alt: var(--success-color);
    --hover-color: var(--text-color-alt);
    --hover-color-alt: var(--text-color);
@@ -39,7 +39,7 @@
    --box-rounding: 5px;
    --border-size: 3px;
    --border-style: solid;
-   --border-color: var(--success-color);
+   --border-color: var(--secondary-color);
    --border-color-alt: var(--secondary-color);
 }
 

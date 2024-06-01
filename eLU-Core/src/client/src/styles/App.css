@@ -1,0 +1,27 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   height: 100vh;
+   gap: 1rem;
+   padding: 1rem;
+}
+
+.container-row {
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
+   justify-content: center;
+   height: min-content;
+   gap: 1rem;
+}
+
+.container-column {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   height: min-content;
+   gap: 1rem;
+}

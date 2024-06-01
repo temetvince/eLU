@@ -1,0 +1,6 @@
+.mod-component {
+   display: flex;
+   align-items: stretch;
+   justify-content: center;
+   flex: 1;
+}

@@ -1,0 +1,7 @@
+.mod-component .mod-navigator {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid var(--border-color);
+   min-width: 100%;
+}
