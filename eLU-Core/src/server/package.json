@@ -1,0 +1,40 @@
+{
+  "name": "template-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.mts",
+  "scripts": {
+    "start": "npm run build && npm run run",
+    "run": "node dist/main.mjs",
+    "build": "npm run typescript",
+    "typescript": "npm run lint && npm run format && tsc",
+    "lint": "eslint \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts}\" --quiet --fix",
+    "format": "prettier --write \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\" \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\"",
+    "update": "ncu -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temetvince/template-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temetvince/template-typescript/issues"
+  },
+  "homepage": "https://github.com/temetvince/template-typescript#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.28",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "npm-check-updates": "^16.14.17",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
