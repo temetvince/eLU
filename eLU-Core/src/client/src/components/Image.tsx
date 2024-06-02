@@ -1,20 +1,19 @@
-import React from "react";
-
-import "../styles/Image.css";
+import React from 'react';
+import '../styles/Image.css';
 
 interface ImageProps {
    source: string;
    alt: string;
 }
 
-const Image = (props: ImageProps) => {
-   const { source, alt } = props;
-
+const Image: React.FC<ImageProps> = ({ source, alt }) => {
    return (
-      <div className="image-component">
-         <div className="image-container">
-            <img className="loadscreen" src={source} alt={alt} />
-         </div>
+      <div className='container'>
+         <img
+            className='loadscreen'
+            src={source}
+            alt={alt}
+         />
       </div>
    );
 };

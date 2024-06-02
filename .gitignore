@@ -19,7 +19,7 @@ amplify/backend/amplify-meta.json
 .cache/
 db
 .docusaurus
-.env
+#.env
 .env.development.local
 .env.local
 .env.production.local

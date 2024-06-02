@@ -1,13 +1,12 @@
 {
-  "name": "website",
+  "name": "experience-litcubes-universe",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run typescript && webpack-dev-server",
-    "build": "npm run typescript && webpack",
-    "typescript": "npm run lint && npm run format && tsc",
+    "start": "npm run build && webpack-dev-server",
+    "build": "npm run lint && npm run format && tsc && webpack",
     "lint": "eslint \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts}\" --quiet --fix",
-    "format": "prettier --write \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\" \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\"",
+    "format": "prettier --write \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\"",
     "update": "ncu -u"
   },
   "browserslist": {
@@ -37,7 +36,6 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "html-webpack-plugin": "^5.6.0",
-    "npm": "^10.5.0",
     "npm-check-updates": "^16.14.17",
     "prettier": "^3.2.5",
     "style-loader": "^3.3.4",
@@ -50,6 +48,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "p5": "^1.9.2",
+    "primeicons": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Call: React.FC = () => {
-   const [message, setMessage] = useState<string>("");
+   const [message, setMessage] = useState<string>('');
 
    useEffect(() => {
       axios
-         .get("http://localhost:3001/")
+         .get('http://localhost:3001/')
          .then((response) => {
             setMessage(response.data);
          })
          .catch((error) => {
-            console.error("There was an error making the request!", error);
+            console.error('There was an error making the request!', error);
          });
    }, []);
 
    return (
-      <div className="App">
-         <header className="App-header">
+      <div className='App'>
+         <header className='App-header'>
             <p>{message}</p>
          </header>
       </div>

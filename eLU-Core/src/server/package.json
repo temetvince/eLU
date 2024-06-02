@@ -1,13 +1,11 @@
 {
-  "name": "template-typescript",
+  "name": "elu-server",
   "version": "1.0.0",
   "description": "",
   "main": "src/main.mts",
   "scripts": {
-    "start": "npm run build && npm run run",
-    "run": "node dist/main.mjs",
-    "build": "npm run typescript",
-    "typescript": "npm run lint && npm run format && tsc",
+    "start": "npm run build && node dist/main.mjs",
+    "build": "npm run lint && npm run format && tsc",
     "lint": "eslint \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts}\" --quiet --fix",
     "format": "prettier --write \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\" \"src/**/*.{cjs,mjs,js,jsx,ts,tsx,mts,cts,json,html,css}\"",
     "update": "ncu -u"
