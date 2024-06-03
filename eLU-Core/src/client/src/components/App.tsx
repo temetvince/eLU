@@ -17,6 +17,7 @@ const App = () => {
       installSteam: '',
       installNoSteam: '',
       installButton: '',
+      installOptional: '',
       alaankwa: '',
       altFont: '',
       swm2Alt: '',
@@ -54,7 +55,7 @@ const App = () => {
                      <Check isChecked={false}>
                         <p>{appContent.installNoSteam}</p>
                      </Check>
-                     <p>Optional Mods to Install</p>
+                     <p>{appContent.installOptional}</p>
                      <CheckBox
                         name='alaankwa'
                         value='Alaankwa'

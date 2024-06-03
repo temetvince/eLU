@@ -4,9 +4,10 @@
     "installHeader": "Installation",
     "installSteam": "X3AP Steam Installation",
     "installNoSteam": "No-Steam Executable",
+    "installButton": "Install",
+    "installOptional": "Optional Mods to Install",
     "alaankwa": "Alaankwa",
     "altFont": "Alternate Font",
-    "installButton": "Install",
     "featuresHeader": "Features and Enhancements",
     "features": [
       {
